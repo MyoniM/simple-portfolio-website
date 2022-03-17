@@ -1,9 +1,7 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
-
-import beymart from '../public/images/works/7.jpg'
+import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import Layout from "../components/layouts/article";
+import Section from "../components/section";
+import { WorkGridItem } from "../components/grid-item";
 
 const Works = () => (
   <Layout title="Works">
@@ -14,7 +12,11 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="beymart" title="Beymart" thumbnail={beymart}>
+          <WorkGridItem
+            id="beymart"
+            title="Beymart"
+            thumbnail={`/images/works/7.jpg`}
+          >
             An online grocery delivery service in Addis Ababa from listed
             stores/supermarkets and retailers.
           </WorkGridItem>
@@ -30,7 +32,6 @@ const Works = () => (
       </Section> */}
     </Container>
   </Layout>
-)
+);
 
-export default Works
-export { getServerSideProps } from '../components/chakra'
+export default Works;

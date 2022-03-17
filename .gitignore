@@ -1,5 +1,7 @@
 node_modules
 .next
+out
+.firebase
 dist
 .vercel
 .env
