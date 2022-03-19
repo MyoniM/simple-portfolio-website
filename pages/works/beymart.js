@@ -7,12 +7,12 @@ import {
   SimpleGrid,
   UnorderedList,
   Heading,
-  Center
-} from '@chakra-ui/react'
-import Layout from '../../components/layouts/article'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
-import P from '../../components/paragraph'
+  Center,
+} from "@chakra-ui/react";
+import Layout from "../../components/layouts/article";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Title, WorkImage, Meta } from "../../components/work";
+import P from "../../components/paragraph";
 
 const Work = () => (
   <Layout title="Beymart">
@@ -23,7 +23,8 @@ const Work = () => (
       <P>
         Well, who doesn’t love shopping? Especially when we have online shopping
         apps that get you BETTER PRODUCTS AT CRAZY DISCOUNTS, right at your
-        doorstep!
+        doorstep! Beymart is an e-commerce app built with the technologies
+        listed below.
       </P>
 
       <List ml={4} my={4}>
@@ -73,6 +74,6 @@ const Work = () => (
       </SimpleGrid>
     </Container>
   </Layout>
-)
+);
 
-export default Work
+export default Work;
