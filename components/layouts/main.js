@@ -15,6 +15,9 @@ const Main = ({ children, router }) => {
         <meta property="og:site_name" content="Yonatan Merkebu's Homepage" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/card.png" />
+        <meta property="og:title" content="Title" />
+        <meta property="og:image" content="/images/me.jpg" />
+        
         <title>Yonatan Merkebu - Homepage</title>
       </Head>
 
