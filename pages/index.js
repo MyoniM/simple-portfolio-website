@@ -155,9 +155,6 @@ const Home = () => {
               Web Scraping
             </Tag>
             <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
-              GraphQL
-            </Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
               DevOps
             </Tag>
             <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
@@ -234,7 +231,10 @@ const Home = () => {
             </ListItem>
 
             <ListItem>
-              <CopyToClipboard text="se.yonatan.merkebu@gmail.com" onCopy={() => showToast("Copied Email")}>
+              <CopyToClipboard
+                text="se.yonatan.merkebu@gmail.com"
+                onCopy={() => showToast("Copied Email")}
+              >
                 <Button
                   variant="ghost"
                   colorScheme="teal"
@@ -246,7 +246,10 @@ const Home = () => {
             </ListItem>
 
             <ListItem>
-              <CopyToClipboard text="0967657294" onCopy={() => showToast("Copied Phone number")}>
+              <CopyToClipboard
+                text="0967657294"
+                onCopy={() => showToast("Copied Phone number")}
+              >
                 <Button
                   variant="ghost"
                   colorScheme="teal"

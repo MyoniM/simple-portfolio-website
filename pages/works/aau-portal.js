@@ -19,23 +19,23 @@ const Work = () => {
     <Layout title="Beymart">
       <Container>
         <Title>
-          Beymart <Badge padding={1}>2022-Present</Badge>
+          AAU Portal <Badge padding={1}>2021</Badge>
         </Title>
         <P>
-          Well, who doesn’t love shopping? Especially when we have online
-          shopping apps that get you BETTER PRODUCTS AT CRAZY DISCOUNTS, right
-          at your doorstep! Beymart is an e-commerce app built with the
-          technologies listed below.
+          AAU Portal is an app that is built for all Addis Ababa
+          Universities(Social, Natural, Medical...) aiming to simplify the
+          hustle when it comes to accessing the universities official portal. It
+          is built by the technologies listed below.
         </P>
 
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Platform</Meta>
-            <span>android /iOS</span>
+            <span>android</span>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>Flutter, NodeJs, GraphQL, MySQL, Firebase</span>
+            <span>Flutter, NodeJs</span>
           </ListItem>
         </List>
 
@@ -45,33 +45,21 @@ const Work = () => {
 
         <UnorderedList my={4}>
           <ListItem>
-            <Link href="https://apkgk.com/com.bey.mart">
+            <Link href="https://play.google.com/store/apps/details?id=com.BlueScenes.AAUPortal">
               <Badge mr={2}>Android</Badge>
               Android download link
-              <ExternalLinkIcon mx="2px" />
-            </Link>
-          </ListItem>
-
-          <ListItem>
-            <Link href="https://apps.apple.com/us/app/beymart/id1596305801">
-              <Badge mr={2}>iOS</Badge>
-              iOS download link
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </UnorderedList>
 
         <SimpleGrid columns={2} gap={2}>
-          <WorkImage src="/images/works/7.jpg" alt="beymart" />
-          <WorkImage src="/images/works/4.jpg" alt="beymart" />
+          <WorkImage src="/images/works/aauportal/1.jpg" alt="aau-portal" />
+          <WorkImage src="/images/works/aauportal/2.jpg" alt="aau-portal" />
         </SimpleGrid>
         <SimpleGrid columns={2} gap={2}>
-          <WorkImage src="/images/works/6.jpg" alt="beymart" />
-          <WorkImage src="/images/works/5.jpg" alt="beymart" />
-        </SimpleGrid>
-        <SimpleGrid columns={2} gap={2}>
-          <WorkImage src="/images/works/3.jpg" alt="beymart" />
-          <WorkImage src="/images/works/1.jpg" alt="beymart" />
+          <WorkImage src="/images/works/aauportal/3.jpg" alt="aau-portal" />
+          <WorkImage src="/images/works/aauportal/4.jpg" alt="aau-portal" />
         </SimpleGrid>
       </Container>
     </Layout>

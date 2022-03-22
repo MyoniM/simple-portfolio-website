@@ -21,6 +21,15 @@ const Works = () => (
             stores/supermarkets and retailers.
           </WorkGridItem>
         </Section>
+        <Section>
+          <WorkGridItem
+            id="aau-portal"
+            title="AAU Portal"
+            thumbnail={`/images/works/aauportal/1.jpg`}
+          >
+            A simple app for all of Addis Ababa Universities
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
 
       {/* <Section delay={0.2}>
