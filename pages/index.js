@@ -121,6 +121,9 @@ const Home = () => {
               Ant Design
             </Tag>
             <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
+              Chakra UI
+            </Tag>
+            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
               Typescript
             </Tag>
             <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
