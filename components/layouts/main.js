@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import NavBar from '../navbar'
-import { Box, Container } from '@chakra-ui/react'
-import Footer from '../footer'
+import Head from "next/head";
+import NavBar from "../navbar";
+import { Box, Container } from "@chakra-ui/react";
+import Footer from "../footer";
 
 const Main = ({ children, router }) => {
   return (
@@ -17,19 +17,19 @@ const Main = ({ children, router }) => {
         <meta property="og:image" content="/card.png" />
         <meta property="og:title" content="Title" />
         <meta property="og:image" content="/images/me.jpg" />
-        
+
         <title>Yonatan Merkebu - Homepage</title>
       </Head>
 
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-        <div style={{ marginTop: '30px' }}></div>
+        <div style={{ margin: "30px 0" }}></div>
         {children}
         <Footer />
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

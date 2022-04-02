@@ -10,15 +10,18 @@ import {
   ListItem,
   useColorModeValue,
   chakra,
+  SimpleGrid,
   useToast,
 } from "@chakra-ui/react";
+
+import { GridItem } from "../components/grid-item";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import { IoLogoGithub, IoMail, IoPhonePortrait } from "react-icons/io5";
-import { BsTelegram } from "react-icons/bs";
+import { BsTelegram, BsLinkedin, BsMedium } from "react-icons/bs";
 import { Image } from "@chakra-ui/react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -158,9 +161,6 @@ const Home = () => {
               Web Scraping
             </Tag>
             <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
-              DevOps
-            </Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
               Docker
             </Tag>
             <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
@@ -274,7 +274,53 @@ const Home = () => {
                 </Button>
               </Link>
             </ListItem>
+            <ListItem>
+              <Link href="https://yonatan-merkebu.medium.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<BsMedium />}
+                >
+                  Medium
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/yonatan-merkebu-16a633182"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<BsLinkedin />}
+                >
+                  Linked In
+                </Button>
+              </Link>
+            </ListItem>
           </List>
+          <br />
+          <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            <GridItem
+              href="https://blog.devgenius.io/advanced-docker-docker-storage-drivers-and-file-systems-81a5340c0761"
+              title="Advanced Docker — Docker storage drivers and file systems"
+              thumbnail={`/images/blog/blogtwo.jpg`}
+            />
+            <GridItem
+              href="https://yonatan-merkebu.medium.com/docker-for-the-absolute-beginner-8c6dbcd71e4b"
+              title="Docker for the absolute beginner"
+              thumbnail={`/images/blog/blogone.jpg`}
+            />
+          </SimpleGrid>
+
+          <Box align="center" my={4}>
+            <NextLink href="/posts" scroll={false}>
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                More posts
+              </Button>
+            </NextLink>
+          </Box>
         </Section>
       </Container>
     </Layout>
