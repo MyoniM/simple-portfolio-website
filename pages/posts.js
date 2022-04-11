@@ -23,6 +23,15 @@ const Posts = () => (
             thumbnail={`/images/blog/blogone.jpg`}
           />
         </SimpleGrid>
+        <br />
+        <br />
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            href="https://blog.devgenius.io/kubernetes-k8-high-level-overview-d4e8ef59de00"
+            title="Kubernetes(k8) High-level overview"
+            thumbnail={`/images/blog/blogthree.jpg`}
+          />
+        </SimpleGrid>
       </Section>
       <br />
       <Heading as="h3" fontSize={20} mb={4}>

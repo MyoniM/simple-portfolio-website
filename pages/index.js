@@ -49,7 +49,7 @@ const Home = () => {
           textAlign="center"
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
         >
-          Hello, I&apos;m a full-stack developer and DevOps engineer!
+          Full-stack Developer | Junior DevOps Engineer | Junior Cloud Practitioners
         </Box>
 
         <Box display={{ md: "flex" }}>
@@ -57,7 +57,7 @@ const Home = () => {
             <Heading as="h2" variant="page-title">
               Yonatan Merkebu
             </Heading>
-            <p>Senior Software Engineer / Artist</p>
+            <p>Software Engineer / Artist</p>
           </Box>
           <Box
             flexShrink={0}
@@ -91,14 +91,14 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph>
-            I am a full-stack developer and DevOps Engineer based in Addis Ababa
-            with a passion for learning new stuff every day. <br /> I am
-            experienced Software Developer adept in bringing forth expertise in
-            design, installation, testing and maintenance of software systems.
-            Proficient in various platforms and languages. Experienced with the
-            latest development tools and procedures. Able to effectively
-            self-manage during independent projects, as well as collaborate as
-            part of a productive team.
+            I am a Software Engineer based in
+            Addis Ababa with a passion for learning new stuff every day. <br />{" "}
+            I am experienced Software Developer adept in bringing forth
+            expertise in design, installation, testing and maintenance of
+            software systems. Proficient in various platforms and languages.
+            Experienced with the latest development tools and procedures. Able
+            to effectively self-manage during independent projects, as well as
+            collaborate as part of a productive team.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works" scroll={false}>
@@ -161,21 +161,27 @@ const Home = () => {
               Web Scraping
             </Tag>
             <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
+              AWS
+            </Tag>
+            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
               Docker
             </Tag>
             <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
-              Jenkins
+              GitLab CI/CD
             </Tag>
+            {/* <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
+              Jenkins
+            </Tag> */}
             <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
               Ansible
             </Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
+            {/* <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
               Puppet
-            </Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Shef</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
+            </Tag> */}
+            {/* <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Shef</Tag> */}
+            {/* <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
               Terraform
-            </Tag>
+            </Tag> */}
             <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>
               Kubernetes
             </Tag>
@@ -200,8 +206,8 @@ const Home = () => {
             Worked at SkyKeys consultancy
           </BioSection>
           <BioSection>
-            <BioYear>2022 to present</BioYear>
-            Working at Beymart e-commerce
+            <BioYear>2021 to 2022</BioYear>
+            Worked at Beymart e-commerce
           </BioSection>
         </Section>
 
@@ -311,6 +317,14 @@ const Home = () => {
               href="https://yonatan-merkebu.medium.com/docker-for-the-absolute-beginner-8c6dbcd71e4b"
               title="Docker for the absolute beginner"
               thumbnail={`/images/blog/blogone.jpg`}
+            />
+          </SimpleGrid>
+          <br />
+          <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            <GridItem
+              href="https://blog.devgenius.io/kubernetes-k8-high-level-overview-d4e8ef59de00"
+              title="Kubernetes(k8) High-level overview"
+              thumbnail={`/images/blog/blogthree.jpg`}
             />
           </SimpleGrid>
 
