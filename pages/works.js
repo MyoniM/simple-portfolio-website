@@ -48,6 +48,7 @@ const Works = () => (
           }}
           href="https://github.com/MyoniM"
           target={"_blank"}
+          rel="noreferrer"
         >
           Github
         </a>
