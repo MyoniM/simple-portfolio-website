@@ -1,14 +1,4 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  SimpleGrid,
-  UnorderedList,
-  Heading,
-  Center,
-} from "@chakra-ui/react";
+import { Container, Badge, Link, List, ListItem, SimpleGrid, UnorderedList, Heading, Center } from "@chakra-ui/react";
 import Layout from "../../components/layouts/article";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Title, WorkImage, Meta } from "../../components/work";
@@ -17,15 +7,13 @@ import P from "../../components/paragraph";
 const Work = () => {
   return (
     <Layout title="AAU Portal">
-      <Container>
+      <Container maxW={"container.md"}>
         <Title>
           AAU Portal <Badge padding={1}>2021</Badge>
         </Title>
         <P>
-          AAU Portal is an app that is built for all Addis Ababa
-          Universities(Social, Natural, Medical...) aiming to simplify the
-          hustle when it comes to accessing the universities official portal.
-          AAU Portal is an app built with the technologies listed below.
+          AAU Portal is an app that is built for all Addis Ababa Universities(Social, Natural, Medical...) aiming to simplify the hustle when it comes
+          to accessing the universities official portal. AAU Portal is an app built with the technologies listed below.
         </P>
 
         <List ml={4} my={4}>
@@ -40,7 +28,7 @@ const Work = () => {
         </List>
 
         <Heading as="h4" fontSize={16} my={6}>
-          <Center>Link</Center>
+          Links
         </Heading>
 
         <UnorderedList my={4}>

@@ -1,14 +1,4 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  SimpleGrid,
-  UnorderedList,
-  Heading,
-  Center,
-} from "@chakra-ui/react";
+import { Container, Badge, Link, List, ListItem, SimpleGrid, UnorderedList, Heading, Center } from "@chakra-ui/react";
 import Layout from "../../components/layouts/article";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Title, WorkImage, Meta } from "../../components/work";
@@ -17,15 +7,13 @@ import P from "../../components/paragraph";
 const Work = () => {
   return (
     <Layout title="Super Bet tips">
-      <Container>
+      <Container maxW={"container.md"}>
         <Title>
           Super Bet tips <Badge padding={1}>2022</Badge>
         </Title>
         <P>
-          Super betting bot is a simple bot that uses web scraping to fetch data
-          from the internet and display the result in a simplified table look.
-          It also gives match insights that helps you make the right decision.
-          Super betting bot is a telegram bot built with the technologies listed
+          Super betting bot is a simple bot that uses web scraping to fetch data from the internet and display the result in a simplified table look.
+          It also gives match insights that helps you make the right decision. Super betting bot is a telegram bot built with the technologies listed
           below.
         </P>
 
@@ -41,7 +29,7 @@ const Work = () => {
         </List>
 
         <Heading as="h4" fontSize={16} my={6}>
-          <Center>Link</Center>
+          Links
         </Heading>
 
         <UnorderedList my={4}>

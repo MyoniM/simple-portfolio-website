@@ -5,7 +5,7 @@ import { GridItem } from "../components/grid-item";
 
 const Posts = () => (
   <Layout title="Posts">
-    <Container>
+    <Container maxW={"container.md"}>
       <Heading as="h3" fontSize={20} mb={4}>
         Blogs
       </Heading>

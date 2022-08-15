@@ -1,19 +1,6 @@
 import Logo from "./logo";
 import NextLink from "next/link";
-import {
-  Container,
-  Box,
-  Link,
-  Stack,
-  Heading,
-  Flex,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
 import { IoLogoGithub } from "react-icons/io5";
@@ -23,13 +10,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
   return (
     <NextLink href={href} passHref scroll={false}>
-      <Link
-        p={2}
-        bg={active ? "grassTeal" : undefined}
-        color={active ? "#202023" : inactiveColor}
-        target={target}
-        {...props}
-      >
+      <Link p={2} bg={active ? "grassTeal" : undefined} color={active ? "#202023" : inactiveColor} target={target} {...props}>
         {children}
       </Link>
     </NextLink>
@@ -49,14 +30,7 @@ const Navbar = (props) => {
       zIndex={1}
       {...props}
     >
-      <Container
-        display="flex"
-        p={2}
-        maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
-      >
+      <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
             <Logo />
@@ -77,15 +51,7 @@ const Navbar = (props) => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem
-            target="_blank"
-            href="https://github.com/MyoniM"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
+          <LinkItem target="_blank" href="https://github.com/MyoniM" path={path} display="inline-flex" alignItems="center" style={{ gap: 4 }} pl={2}>
             <IoLogoGithub />
             Source
           </LinkItem>
@@ -96,12 +62,7 @@ const Navbar = (props) => {
 
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu isLazy id="navbar-menu">
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
+              <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
               <MenuList>
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>

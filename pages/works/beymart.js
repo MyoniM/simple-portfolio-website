@@ -1,14 +1,4 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  SimpleGrid,
-  UnorderedList,
-  Heading,
-  Center,
-} from "@chakra-ui/react";
+import { Container, Badge, Link, List, ListItem, SimpleGrid, UnorderedList, Heading, Center } from "@chakra-ui/react";
 import Layout from "../../components/layouts/article";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Title, WorkImage, Meta } from "../../components/work";
@@ -17,15 +7,13 @@ import P from "../../components/paragraph";
 const Work = () => {
   return (
     <Layout title="Beymart">
-      <Container>
+      <Container maxW={"container.md"}>
         <Title>
-          Beymart <Badge padding={1}>2022-Present</Badge>
+          Beymart <Badge padding={1}>2022</Badge>
         </Title>
         <P>
-          Well, who doesn’t love shopping? Especially when we have online
-          shopping apps that get you BETTER PRODUCTS AT CRAZY DISCOUNTS, right
-          at your doorstep! Beymart is an e-commerce app built with the
-          technologies listed below.
+          Well, who doesn’t love shopping? Especially when we have online shopping apps that get you BETTER PRODUCTS AT CRAZY DISCOUNTS, right at your
+          doorstep! Beymart is an e-commerce app built with the technologies listed below.
         </P>
 
         <List ml={4} my={4}>
@@ -40,7 +28,7 @@ const Work = () => {
         </List>
 
         <Heading as="h4" fontSize={16} my={6}>
-          <Center>Link</Center>
+          Links
         </Heading>
 
         <UnorderedList my={4}>
