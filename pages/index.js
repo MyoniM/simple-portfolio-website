@@ -1,19 +1,19 @@
-import NextLink from "next/link";
-import { Link, Container, Heading, Box, Tag, Button, List, ListItem, useColorModeValue, chakra, SimpleGrid, useToast } from "@chakra-ui/react";
+import NextLink from 'next/link';
+import { Link, Container, Heading, Box, Tag, Button, List, ListItem, useColorModeValue, chakra, SimpleGrid, useToast } from '@chakra-ui/react';
 
-import { GridItem } from "../components/grid-item";
-import { ChevronRightIcon } from "@chakra-ui/icons";
-import Paragraph from "../components/paragraph";
-import { BioSection, BioYear } from "../components/bio";
-import Layout from "../components/layouts/article";
-import Section from "../components/section";
-import { IoLogoGithub, IoMail, IoPhonePortrait } from "react-icons/io5";
-import { BsTelegram, BsLinkedin, BsMedium } from "react-icons/bs";
-import { Image } from "@chakra-ui/react";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import { GridItem } from '../components/grid-item';
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import Paragraph from '../components/paragraph';
+import { BioSection, BioYear } from '../components/bio';
+import Layout from '../components/layouts/article';
+import Section from '../components/section';
+import { IoLogoGithub, IoMail, IoPhonePortrait } from 'react-icons/io5';
+import { BsTelegram, BsLinkedin, BsMedium } from 'react-icons/bs';
+import { Image } from '@chakra-ui/react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const ProfileImage = chakra(Image, {
-  shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
+  shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
 });
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
   const showToast = (mssg) => {
     toast({
       title: mssg,
-      status: "success",
+      status: 'success',
       duration: 5000,
       isClosable: true,
     });
@@ -29,16 +29,16 @@ const Home = () => {
   return (
     <Layout>
       <Container maxW="container.lg">
-        <Box borderRadius="lg" mb={6} p={3} textAlign="center" bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}>
+        <Box borderRadius="lg" mb={6} p={3} textAlign="center" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>
           SWE | ALGO EXPERT | SYSTEMS DESIGNER | JUNIOR DEVOPS ENGINEER
         </Box>
 
-        <Box display={{ md: "flex" }}>
+        <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Yonatan Merkebu
             </Heading>
-            <p>Software Engineer / Artist</p>
+            <p>Inspired by the fear of being basic!</p>
           </Box>
           <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} textAlign="center">
             <Box
@@ -58,7 +58,7 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            About me
           </Heading>
           <Paragraph>
             I am a Software Engineer based in Addis Ababa with a passion for learning new stuff every day. <br /> I am experienced Software Developer
@@ -67,12 +67,27 @@ const Home = () => {
             as well as collaborate as part of a productive team.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works" scroll={false}>
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My portfolio
+            <NextLink target="_blank" href="https://github.com/MyoniM" scroll={false}>
+              <Button leftIcon={<IoLogoGithub />} colorScheme="teal">
+                My Github
               </Button>
             </NextLink>
           </Box>
+        </Section>
+
+        <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            3 reasons why you should hire me
+          </Heading>
+          <Paragraph>
+            The first reason is, I have a great understanding of the latest tools and languages to build modern solutions for your problems. My
+            skills, qualities, and experience are a strong match for many jobs. And because I can learn and understand so fast, you won&apos;t have to
+            spend your valuable time training me up. So I can quickly add value to the team. <br />
+            <br /> The second reason is, I am not only aware of the fields that I am working on. I also have a strong understanding of other fields
+            besides mine and I believe that will positively affect my team and will help us to progress faster.
+            <br /> <br />
+            The third reason is, I always take ownership of my professional development. I will always improve and grow in the role.
+          </Paragraph>
         </Section>
 
         <Section delay={0.3}>
@@ -80,28 +95,34 @@ const Home = () => {
             Skills
           </Heading>
           <div>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>HTML /CSS /Javascript</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Typescript</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Go</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Python</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>ReactJs</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>NextJs</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>NodeJS</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Flutter</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Firebase</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>PostgreSQL</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>MySQL</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>MongoDB</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>REST API</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>GraphQL</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Web Scraping</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>AWS</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>GCP</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Docker</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>CI/CD</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Algorithms</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>Systems Design</Tag>
-            <Tag style={{ marginRight: "5px", marginBottom: "5px" }}>DevOps</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>OOP</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Microservice</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Systems Design</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Design Patterns</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Algorithms</Tag>
+            <br />
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>HTML /CSS /Javascript</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Typescript</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Python</Tag>
+            <br />
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>ReactJs</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>NextJs</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>NodeJS</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Flutter</Tag>
+            <br />
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Firebase</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>PostgreSQL</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>MongoDB</Tag>
+            <br />
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>REST API</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>GraphQL</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Web Scraping</Tag>
+            <br />
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>AWS</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>GCP</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Docker</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>Kubernetes</Tag>
+            <Tag style={{ marginRight: '5px', marginBottom: '5px' }}>DevOps</Tag>
           </div>
         </Section>
 
@@ -152,7 +173,7 @@ const Home = () => {
             </ListItem>
 
             <ListItem>
-              <CopyToClipboard text="se.yonatan.merkebu@gmail.com" onCopy={() => showToast("Copied Email")}>
+              <CopyToClipboard text="se.yonatan.merkebu@gmail.com" onCopy={() => showToast('Copied Email')}>
                 <Button variant="ghost" colorScheme="teal" leftIcon={<IoMail />}>
                   se.yonatan.merkebu@gmail.com
                 </Button>
@@ -160,7 +181,7 @@ const Home = () => {
             </ListItem>
 
             <ListItem>
-              <CopyToClipboard text="0967657294" onCopy={() => showToast("Copied Phone number")}>
+              <CopyToClipboard text="0967657294" onCopy={() => showToast('Copied Phone number')}>
                 <Button variant="ghost" colorScheme="teal" leftIcon={<IoPhonePortrait />}>
                   0967657294
                 </Button>

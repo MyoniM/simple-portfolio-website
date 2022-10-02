@@ -45,15 +45,15 @@ const Navbar = (props) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
+          {/* <LinkItem href="/works" path={path}>
             Works
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
           <LinkItem target="_blank" href="https://github.com/MyoniM" path={path} display="inline-flex" alignItems="center" style={{ gap: 4 }} pl={2}>
             <IoLogoGithub />
-            Source
+            Github
           </LinkItem>
         </Stack>
 
