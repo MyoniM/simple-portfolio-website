@@ -61,10 +61,52 @@ const Home = () => {
             About me
           </Heading>
           <Paragraph>
-            I am a Software Engineer based in Addis Ababa with a passion for learning new stuff every day. <br /> I am experienced Software Developer
-            adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Proficient in various platforms
-            and languages. Experienced with the latest development tools and procedures. Able to effectively self-manage during independent projects,
-            as well as collaborate as part of a productive team.
+            I am a hard-working and driven individual who is not afraid to face a challenge. I am skilled in programming languages such as Java,
+            Javascript, Typescript, and Python, and have a strong understanding of data structures, algorithms, and computer science principles. I
+            have experience working with software development tools and environments and am proficient in debugging and troubleshooting code. I am a
+            team player with strong communication skills and a customer-focused mindset and am committed to delivering high-quality work that meets
+            the needs of users and stakeholders.
+            <br />
+            <br />
+            Tech skills:
+            <br />
+            - Proficiency with programming languages, such as Javascript, Typescript, Python
+            <br />
+            - Knowledge of data structures, algorithms, and computer science principles
+            <br />
+            - Experience with software development tools and environments, version control systems, and build automation tools
+            <br />
+            - Familiarity with software testing and debugging techniques
+            <br />
+            - Experience with database design and management
+            <br />
+            - Knowledge of system design
+            <br />
+            <br />
+            Soft skills:
+            <br />
+            - Strong problem-solving and analytical skills
+            <br />
+            - Good communication skills and the ability to work effectively in a team
+            <br />
+            - Attention to detail and ability to deliver high-quality work
+            <br />
+            - Time management and organization skills
+            <br />
+            - Ability to learn and adapt to new technologies and methodologies
+            <br />
+            - Customer-focused mindset and ability to understand and address user needs
+            <br />
+            - Creativity and ability to generate new ideas and approaches to solving problems
+            <br />
+            <br />
+            As a software engineer, my long-term career goal is to become an expert in a specific area of software development, such as backend
+            development, systems design, or the cloud. I am also interested in eventually taking on a leadership role and mentoring other team
+            members.
+            <br />
+            <br />
+            In the short term, I am focused on improving my technical skills and staying up-to-date on the latest technologies and best practices.
+            Ultimately, I want to use my skills and knowledge to positively impact the world by developing innovative and valuable software solutions.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink target="_blank" href="https://github.com/MyoniM" scroll={false}>
@@ -80,13 +122,17 @@ const Home = () => {
             3 reasons why you should hire me
           </Heading>
           <Paragraph>
-            The first reason is, I have a great understanding of the latest tools and languages to build modern solutions for your problems. My
-            skills, qualities, and experience are a strong match for many jobs. And because I can learn and understand so fast, you won&apos;t have to
-            spend your valuable time training me up. So I can quickly add value to the team. <br />
-            <br /> The second reason is, I am not only aware of the fields that I am working on. I also have a strong understanding of other fields
-            besides mine and I believe that will positively affect my team and will help us to progress faster.
-            <br /> <br />
-            The third reason is, I always take ownership of my professional development. I will always improve and grow in the role.
+            The first is that I can design cutting-edge solutions to your challenges because I have a thorough understanding of the newest tools and
+            programming languages. For many occupations, my qualifications, traits, and experience are a strong match. Additionally, you won&apos;t need to
+            waste your valuable time training me because I can learn and grasp things so quickly.
+            <br />
+            <br />
+            The second reason is that I am not only knowledgeable in the fields I work in. I am also quite knowledgeable in disciplines outside of my
+            own, and I think that will benefit my team and speed up our progress.
+            <br />
+            <br />
+            The third factor is that I always assume responsibility for my own professional progress. I&apos;ll continue to develop and get better at the
+            job.
           </Paragraph>
         </Section>
 
